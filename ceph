@@ -1,0 +1,17 @@
+# Check cluster status
+ceph status
+
+# Show cluster usage stats (i.e. free space)
+ceph df
+
+# Show OSDs and their placement
+ceph osd tree
+
+# Show all OSDs that are either down or out
+ceph osd tree down out
+
+# Show cluster health (optionally detailed)
+ceph health [detail]
+
+# Prevent cluster from shifting data around automatically (useful for expected reboots)
+ceph osd set noout

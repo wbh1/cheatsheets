@@ -1,0 +1,8 @@
+# To deactivate a kernel module
+modprobe -r <module>
+
+# To activate a kernel module
+modprobe <module_name>
+
+# To blacklist a kernel module, add it to the modprobe blacklist
+echo "blacklist i40e" >> /target/etc/modprobe.d/blacklist.conf
