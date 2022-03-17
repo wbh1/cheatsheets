@@ -1,0 +1,9 @@
+---
+syntax: bash
+tags: [ linode ]
+---
+# To enable debug mode
+HSS_DEBUG=1 hss <pattern>
+
+# To SCP a file with HSS
+scp -S hss <file> <pattern>:<file> 

@@ -1,0 +1,13 @@
+---
+syntax: bash
+tags: [ kubernetes, devops ]
+---
+# Show configurable values of a chart
+helm show values <chart>
+
+# Add a chart repository
+helm repo add <name> <url>
+helm repo update
+
+# Install a chart
+helm install <release_name> <chart>
