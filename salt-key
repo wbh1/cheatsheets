@@ -1,0 +1,6 @@
+# List keys
+salt-key --list [all|un|rej|denied]
+
+# Accept a key
+salt-key -a <key/key_glob>
+

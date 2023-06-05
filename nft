@@ -1,0 +1,11 @@
+# List applied nft rules:
+nft list ruleset
+
+# List rules in a specific chain, with '-a' to show handles
+nft list chain bridge nat <chain> -a
+
+# Add a rule
+nft add rule <family> <table> <chain> ip daddr 255.255.255.255 udp dport 138 drop
+
+# Load a ruleset file:
+nft -f filename

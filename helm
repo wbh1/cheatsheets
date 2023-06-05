@@ -11,3 +11,7 @@ helm repo update
 
 # Install a chart
 helm install <release_name> <chart>
+
+# View recent versions of a chart
+helm search repo <repo>/<chart> --versions | tail -5
+
