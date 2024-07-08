@@ -34,3 +34,6 @@ kubectl config view --flatten > ~/.kube/_config && mv ~/.kube/_config ~/.kube/co
 
 # Operate on multiple resources at once
 kubectl <op> <type> [flags] $(kubectl get replicaset -o custom-columns=:.metadata.name | grep external-dns)
+
+# Suspend a cronjob
+kubectl patch cronjobs <job-name> -p '{"spec" : {"suspend" : true }}'

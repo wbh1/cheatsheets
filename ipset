@@ -1,0 +1,5 @@
+# List names of ipsets
+ipset list -name
+
+# List contents of ipset
+ipset list {ipset_name}

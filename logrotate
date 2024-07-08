@@ -1,0 +1,2 @@
+# To force a logrotation regardless of meeting criteria for it (replace with applicable conf file)
+logrotate -f /etc/logrotate.d/sssd-common

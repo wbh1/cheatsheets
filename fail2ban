@@ -1,0 +1,5 @@
+# Get Jail Status
+fail2ban-client status <jail>
+
+# Unban IP
+fail2ban-client set <jail> unbanip <ip>

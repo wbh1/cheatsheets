@@ -1,0 +1,2 @@
+# Record all CPUs
+perf record -F 99 -g -a -- sleep 10
